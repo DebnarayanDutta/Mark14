@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="./hypotenuse.html"><button class="navBtn">Hypotenuse</button></a>
+        <a href="./sumofangles.html"><button class="navBtn">Sum of Angles</button></a>
+        <a href="./isatriangle.html"><button class="navBtn">Is a Triangle?</button></a>
+        <a href="./index.html"><button class="navBtn">Area of Triangle</button></a>
+            </nav>
+    <h1 id="heading">Is Triangle?</h1>
+
+    <form id="formData">
+        <div>
+            <h2 id="third">What is the third angle for the triangle if the angle1 is 45 and angle2 is 45</h2>
+            
+            <input  class = "inputarea" type="radio" name="question1" value="90"/>
+            <label id="Rightangle" for = "angle1">90</label>
+            
+            <input class = "inputarea" type="radio" name="question1" value="60"/>
+            <label id="Rightangle" for = "angle2">60</label>
+            
+            <input  class = "inputarea" type="radio" name="question1" value="45"/>
+            <label id="Rightangle" for = "angle3" >45</label>
+        </div>
+        <div>
+            <h2 id="angle">Which type of angle the third angle of the triangle is?</h2>
+            
+            <input  class = "inputarea" type="radio" name="question2" value="Acute"/>
+            <label id="Rightangle" for = "angle1">Acute</label>
+            
+            <input class = "inputarea" type="radio" name="question2" value="Obtuse"/>
+            <label id="Rightangle" for = "angle2">Obtuse</label>
+            
+            <input  class = "inputarea" type="radio" name="question2" value="Right Angle"/>
+            <label id="Rightangle" for = "angle3" >Right Angle</label>
+        </div>
+    </form>
+    <button id="checkScore" class="calculateBtn">Check score</button>
+    <h1 id="score">Score</h1>
+    <p id="score"></p>
+    <div id ="output"></div>
+    <script src="./isatriangle.js"></script>
+</body>
+</html>

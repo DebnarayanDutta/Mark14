@@ -1,6 +1,6 @@
 const sides = document.querySelectorAll(".inputarea");
 const checkBtn = document.querySelector("#areaBtn");
-const display = document.querySelector("#display")
+const display = document.querySelector("#output")
 
 function calculatearea(a,b){
 let displayarea = 1/2*a*b;
@@ -11,6 +11,8 @@ return displayarea
 function totalarea(){
     if(sides[0].value <= 0){
         display.innerText = "Base cannot be zero"
+    }else if(sides[1].value <= 0){
+        display.innerText = "Height cannot be zero"
     }else{
         let displayarea = calculatearea(Number(sides[0].value), Number(sides[1].value));
         display.innerText= "Area: "+ displayarea

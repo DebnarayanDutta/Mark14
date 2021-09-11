@@ -1,10 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
-body{
-    background-color: black;
-    color: white;
-}
 
-h1{
+*{
+    --DarkBlue : rgb(18, 1, 116);
+    --Yellow : rgb(255,213,90);
+    --Green: rgb(109, 212, 126);
+}
+body{
+    background-color: var(--Yellow);
+    color: var(--DarkBlue);
+    text-align: center;
+}
+#heading {
+    font-size: 60px;
     font-family: 'Raleway', sans-serif;
 }
 
@@ -26,7 +33,16 @@ h1{
 
 .areaBtn{
     background: none;
-    background-color: rgb(117, 143, 79);
+    background-color: var(--Green);
+    border: none;
+    padding: 0.5rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.navBtn{
+    background: none;
+    background-color: var(--Green);
     border: none;
     padding: 0.5rem;
     border-radius: 5px;
@@ -40,3 +56,113 @@ h1{
     font-size: 2rem;
     margin-top: 1rem;
 }
+
+    #calculate {
+        font-size: 80px;
+    }
+    
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .inputDiv{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 300px;
+        justify-content: space-between;
+    }
+    
+    .inputDiv label{
+        font-size: 1.3rem;
+    }
+    
+    .side-input{
+        padding: 1rem;
+        margin-top: 1rem;
+        margin-left: 1rem;
+    }
+    
+    #output {
+        margin-top: 30px;
+        font-size: 25px;
+    }
+    #angleone {
+        margin-top: 20px;
+        font-size: 30px;
+    }
+    #angletwo {
+        margin-top: 20px;
+        font-size: 30px;
+    }
+    #anglethree {
+        margin-top: 20px;
+        font-size: 30px;
+    }
+    #classa {
+    padding: 10px;
+    }
+    #classb {
+        padding: 10px;
+    }
+    #classc {
+        padding: 10px;
+    }
+    
+    .calculateBtn {
+        margin-top: 40px;
+        padding: 10px;
+        font-weight: bolder;
+        border-radius: 8px;
+        border-color: var(--DarkBlue);
+        cursor: pointer;
+        font-size: 15px;
+    }
+    .calculateBtn:hover{
+        background-color: burlywood;
+    }
+    #output {
+        margin-top: 40px;
+        font-size: 30px;
+    
+    }
+    #Triangle {
+    font-size: 80px;
+    }
+    #error{
+        color: red;
+        font-size: 30px;
+    }
+    #display{
+        color: green;
+    }
+    #triangle {
+        font-size: 60px;
+        }
+        #third {
+            font-size: 30px;
+        }
+        .angle-input {
+            font-weight: bold;
+            font-size: 30px;
+        }
+        #angle {
+            font-size: 30px;
+        }
+        #Rightangle {
+            font-size: 20px;
+            font-weight: bold;
+        }
+        #checkScore {
+            margin-top: 40px;
+            padding: 10px;
+            font-weight: bolder;
+            border-radius: 10px;
+            border-color: black;
+        }
+        #score {
+            margin-top: 30px;
+        }
